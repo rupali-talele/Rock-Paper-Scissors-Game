@@ -37,12 +37,10 @@ header {
 }
 .img {
   height: 10vh;
-  /* width: 10vw; */
 }
 .badge {
-  background-color: turquoise; /* width: 5vw; */
+  background-color: turquoise;
   text-align: center;
-  /* margin: 1rem; */
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2vh;
   padding: 0.2rem;
@@ -55,7 +53,7 @@ header {
 .computer {
   position: absolute;
   top: 3vh;
-  right: -7vh;
+  right: -6vh;
 }
 .choices {
   display: flex;
@@ -83,14 +81,14 @@ header {
 }
 .result > p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 5vh;
+  font-size: 4vh;
   color: whitesmoke;
 }
 .option_chosen,
 .round {
-  font-size: 4vh;
+  font-size: 3vh;
   color: whitesmoke;
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 

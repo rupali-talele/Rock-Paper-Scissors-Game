@@ -6,7 +6,6 @@ const user_span = document.getElementById("user-score");
 const computer_span = document.getElementById("computer-score");
 const result_div = document.querySelector(".result>p");
 const option_chosen_div = document.querySelector(".option_chosen>p");
-// const user_choice_div = document.querySelector(".user_choice>p");
 const round_div = document.querySelector(".round>p");
 const score_board = document.getElementsByClassName("score-board");
 const end_game_btn = document.getElementById("end_game");
@@ -56,7 +55,6 @@ function game(user_choice) {
     " | " +
     "Computer chose : " +
     map[computer_choice];
-  // user_choice_div.innerHTML = "You chose : " + map[user_choice];
 
   switch (user_choice + computer_choice) {
     case "rs":
@@ -90,9 +88,7 @@ scissor_div.addEventListener("click", function () {
 });
 
 end_game_btn.addEventListener("click", function () {
-  // comp_choice_div.innerHTML = "";
   move_div.innerHTML = "";
-  // user_choice_div.innerHTML = "";
   option_chosen_div.innerHTML = "";
   round_div.innerHTML = "";
   choices_div.style.display = "none";
@@ -113,9 +109,7 @@ function restart() {
   end_game_btn.style = "";
   play_again_btn.style = "display:none";
   option_chosen_div.innerHTML = "";
-  // comp_choice_div.innerHTML = "";
   move_div.innerHTML = "";
-  // user_choice_div.innerHTML = "";
   round_div.innerHTML = "";
   result_div.innerHTML = "";
 
