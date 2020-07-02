@@ -15,6 +15,7 @@ header {
   background-color: gainsboro;
   height: 10vh;
   display: flex;
+  font-weight: bolder;
   justify-content: center;
   background-color: whitesmoke;
   align-items: center;
@@ -68,17 +69,30 @@ header {
   border-radius: 50%;
   margin: 2rem;
   display: flex;
-  padding: 3vh 2vw;
+  flex-direction: column;
+  padding: 4vh 4vw;
   transition: all 0.3s ease;
   justify-content: center;
 }
 
+.choice_label {
+  padding-top: 0.5rem;
+}
 .result {
   text-align: center;
-  font-size: 8vh;
+}
+.result > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 6vh;
   color: whitesmoke;
+}
+.comp_choice {
+  font-size: 5vh;
+  color: whitesmoke;
+  margin: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .choice:hover {
   background-color: turquoise;
   cursor: pointer;

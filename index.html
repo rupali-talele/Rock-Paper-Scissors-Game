@@ -11,23 +11,25 @@
     <div class="score-board">
       <div class="user badge">user</div>
       <div class="computer badge">computer</div>
-      <span class="user-score">0</span>:<span class="computer-score">0</span>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
-    <div class="result">You win</div>
+    <div class="comp_choice">
+      <p>Computer Chose</p>
+    </div>
+    <div class="result"><p>You win</p></div>
     <div class="choices">
-      <div class="choice">
-        <img src="./images/rock.png" alt="Rock" class="img" id="rock" />
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" alt="Rock" class="img" />
+        <p class="choice_label">Rock</p>
       </div>
-      <div class="choice">
-        <img src="./images/paper.png" alt="Paper" class="img" id="paper" />
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" alt="Paper" class="img" />
+        <p class="choice_label">Paper</p>
       </div>
-      <div class="choice">
-        <img
-          src="./images/scissor.png"
-          alt="scissors"
-          class="img"
-          id="scissors"
-        />
+      <div class="choice" id="scissors">
+        <img src="./images/scissor.png" alt="scissors" class="img" />
+        <br />
+        <p class="choice_label">Scissors</p>
       </div>
     </div>
     <p>Make your move!</p>
