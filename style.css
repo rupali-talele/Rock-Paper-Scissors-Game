@@ -45,6 +45,7 @@ header {
   font-size: 2vh;
   padding: 0.2rem;
 }
+
 .user {
   position: absolute;
   top: 3vh;
@@ -119,4 +120,28 @@ p {
 
 #play_again {
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .user {
+    font-size: 1vh;
+    top: 3vh;
+    left: -2vh;
+  }
+  .computer {
+    font-size: 1vh;
+    right: -3.5vh;
+  }
+  header {
+    font-size: 3vh;
+  }
+  .choices {
+    width: 30vw;
+  }
+  .choice {
+    width: 60%;
+  }
+  .choice_label {
+    font-size: 1.5vh;
+  }
 }
