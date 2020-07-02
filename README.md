@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors-Game
 This is a Rock-Paper-Scissors Game built using HTML,CSS and Javascript.
 
-For rules of Rock-Paper-Scissors Game, please check out the below link - 
+For rules of Rock-Paper-Scissors Game, please check out the link - 
 https://en.wikipedia.org/wiki/Rock_paper_scissors
 
 Guidelines to use the page-
