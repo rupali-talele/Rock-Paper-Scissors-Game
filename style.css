@@ -86,7 +86,8 @@ header {
   font-size: 6vh;
   color: whitesmoke;
 }
-.comp_choice {
+.comp_choice,
+.user_choice {
   font-size: 5vh;
   color: whitesmoke;
   margin: 2rem;

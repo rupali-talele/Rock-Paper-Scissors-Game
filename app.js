@@ -5,6 +5,7 @@ const user_span = document.getElementById("user-score");
 const computer_span = document.getElementById("computer-score");
 const result_div = document.querySelector(".result>p");
 const comp_choice_div = document.querySelector(".comp_choice>p");
+const user_choice_div = document.querySelector(".user_choice>p");
 const score_board = document.getElementsByClassName("score-board");
 const end_game_btn = document.getElementById("end_game");
 const choices_div = document.querySelector(".choices");
@@ -43,6 +44,7 @@ function game(user_choice) {
   };
   const computer_choice = get_computer_choice();
   comp_choice_div.innerHTML = "Computer chose : " + map[computer_choice];
+  user_choice_div.innerHTML = "You chose : " + map[user_choice];
 
   switch (user_choice + computer_choice) {
     case "rs":
@@ -82,6 +84,7 @@ end_game_btn.addEventListener("click", function () {
   comp_choice_div.innerHTML = "";
   choices_div.innerHTML = "";
   move_div.innerHTML = "";
+  user_choice_div.innerHTML = "";
   if (user_score > computer_score) result_div.innerHTML = "You Win!!!";
   else if (user_score < computer_score)
     result_div.innerHTML = "Computer Wins!!!";
