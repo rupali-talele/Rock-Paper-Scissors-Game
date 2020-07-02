@@ -125,15 +125,17 @@ p {
 @media only screen and (max-width: 600px) {
   .user {
     font-size: 1vh;
-    top: 3vh;
+    top: 1.5vh;
     left: -2vh;
   }
   .computer {
     font-size: 1vh;
+    top: 1.5vh;
     right: -3.5vh;
   }
   header {
     font-size: 3vh;
+    letter-spacing: 0.2rem;
   }
   .choices {
     width: 30vw;
@@ -143,5 +145,15 @@ p {
   }
   .choice_label {
     font-size: 1.5vh;
+  }
+  .score-board {
+    width: 30%;
+    height: 5vh;
+    font-size: 2vh;
+  }
+  .result > p,
+  .option_chosen > p,
+  .round > p {
+    font-size: 2vh;
   }
 }
