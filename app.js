@@ -88,7 +88,7 @@ scissor_div.addEventListener("click", function () {
 });
 
 end_game_btn.addEventListener("click", function () {
-  move_div.innerHTML = "";
+  move_div.style.display = "none";
   option_chosen_div.innerHTML = "";
   round_div.innerHTML = "";
   choices_div.style.display = "none";
@@ -108,8 +108,8 @@ function restart() {
   choices_div.style.display = "";
   end_game_btn.style = "";
   play_again_btn.style = "display:none";
+  move_div.style.display = "";
   option_chosen_div.innerHTML = "";
-  move_div.innerHTML = "";
   round_div.innerHTML = "";
   result_div.innerHTML = "";
 
