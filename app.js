@@ -1,15 +1,18 @@
 let user_score = 0;
 let computer_score = 0;
+let round = 0;
 
 const user_span = document.getElementById("user-score");
 const computer_span = document.getElementById("computer-score");
 const result_div = document.querySelector(".result>p");
-const comp_choice_div = document.querySelector(".comp_choice>p");
-const user_choice_div = document.querySelector(".user_choice>p");
+const option_chosen_div = document.querySelector(".option_chosen>p");
+// const user_choice_div = document.querySelector(".user_choice>p");
+const round_div = document.querySelector(".round>p");
 const score_board = document.getElementsByClassName("score-board");
 const end_game_btn = document.getElementById("end_game");
 const choices_div = document.querySelector(".choices");
 const move_div = document.querySelector(".move>p");
+const play_again_btn = document.getElementById("play_again");
 
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
@@ -42,9 +45,18 @@ function game(user_choice) {
     p: "Paper",
     s: "Scissors",
   };
+
+  round++;
+
   const computer_choice = get_computer_choice();
-  comp_choice_div.innerHTML = "Computer chose : " + map[computer_choice];
-  user_choice_div.innerHTML = "You chose : " + map[user_choice];
+  round_div.innerHTML = "Round :" + round;
+  option_chosen_div.innerHTML =
+    "You chose : " +
+    map[user_choice] +
+    " | " +
+    "Computer chose : " +
+    map[computer_choice];
+  // user_choice_div.innerHTML = "You chose : " + map[user_choice];
 
   switch (user_choice + computer_choice) {
     case "rs":
@@ -67,28 +79,51 @@ function game(user_choice) {
 }
 
 rock_div.addEventListener("click", function () {
-  //   console.log("rock");
   game("r");
 });
 
 paper_div.addEventListener("click", function () {
-  //   console.log("paper");
   game("p");
 });
 scissor_div.addEventListener("click", function () {
-  //   console.log("scissors");
   game("s");
 });
 
 end_game_btn.addEventListener("click", function () {
-  comp_choice_div.innerHTML = "";
-  choices_div.innerHTML = "";
+  // comp_choice_div.innerHTML = "";
   move_div.innerHTML = "";
-  user_choice_div.innerHTML = "";
+  // user_choice_div.innerHTML = "";
+  option_chosen_div.innerHTML = "";
+  round_div.innerHTML = "";
+  choices_div.style.display = "none";
+
   if (user_score > computer_score) result_div.innerHTML = "You Win!!!";
   else if (user_score < computer_score)
     result_div.innerHTML = "Computer Wins!!!";
   else result_div.innerHTML = "Game Draw!!!";
 
   end_game_btn.style = "display:none";
+  play_again_btn.style = "display:block";
+});
+
+function restart() {
+  user_span.innerHTML = 0;
+  computer_span.innerHTML = 0;
+  choices_div.style.display = "";
+  end_game_btn.style = "";
+  play_again_btn.style = "display:none";
+  option_chosen_div.innerHTML = "";
+  // comp_choice_div.innerHTML = "";
+  move_div.innerHTML = "";
+  // user_choice_div.innerHTML = "";
+  round_div.innerHTML = "";
+  result_div.innerHTML = "";
+
+  round = 0;
+  user_score = 0;
+  computer_score = 0;
+}
+
+play_again_btn.addEventListener("click", function () {
+  restart();
 });

@@ -83,14 +83,14 @@ header {
 }
 .result > p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 6vh;
-  color: whitesmoke;
-}
-.comp_choice,
-.user_choice {
   font-size: 5vh;
   color: whitesmoke;
-  margin: 2rem;
+}
+.option_chosen,
+.round {
+  font-size: 4vh;
+  color: whitesmoke;
+  margin: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -106,14 +106,19 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.end {
+.end,
+.play {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
 }
-#end_game {
+#end_game,
+#play_again {
   padding: 0.5rem 1rem;
-
   text-align: center;
   margin: 1rem;
+}
+
+#play_again {
+  display: none;
 }
