@@ -6,6 +6,7 @@ const computer_span = document.getElementById("computer-score");
 const result_div = document.querySelector(".result>p");
 const comp_choice_div = document.querySelector(".comp_choice>p");
 const score_board = document.getElementsByClassName("score-board");
+const end_game_btn = document.getElementById("end_game");
 
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
@@ -73,4 +74,12 @@ paper_div.addEventListener("click", function () {
 scissor_div.addEventListener("click", function () {
   //   console.log("scissors");
   game("s");
+});
+
+end_game_btn.addEventListener("click", function () {
+  comp_choice_div.innerHTML = "";
+  if (user_score > computer_score) result_div.innerHTML = "You Win!!!";
+  else if (user_score < computer_score)
+    result_div.innerHTML = "Computer Wins!!!";
+  else result_div.innerHTML = "Game Draw!!!";
 });

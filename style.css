@@ -104,3 +104,15 @@ p {
   font-size: 3vh;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.end {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+#end_game {
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  margin: 1rem;
+}
