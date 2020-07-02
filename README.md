@@ -10,3 +10,5 @@ Functionalities-
 3) User's and computer's move are compared and winner of the round is displayed.
 4) Scores of user and computer are adjusted according to their selections.
 5) After End Game button is clicked, the final winner is displayed.
+
+Github Page- https://rupali-talele.github.io/Rock-Paper-Scissors-Game/
